@@ -21,10 +21,10 @@ body {
 }
 
 .image {
-    height: 20vw;
-    width: 60vw;
-    border-radius: 30px;
-    border: 3px solid #887898;
+  height: 20vw;
+  width: 60vw;
+  border-radius: 30px;
+  border: 3px solid #887898;
 }
 
 .timer {
