@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bomb</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/474x/7b/71/49/7b714932d04d202a409e4eb126558295.jpg"
-</head>
-<body>
-    <img src="https://i.pinimg.com/564x/f0/26/1d/f0261d9f65f87f7af4ad995584c46263.jpg" class="image">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon"
+    href="https://i.pinimg.com/474x/7b/71/49/7b714932d04d202a409e4eb126558295.jpg"
+  </head>
+  <body>
+    <img
+      src="https://i.pinimg.com/564x/f0/26/1d/f0261d9f65f87f7af4ad995584c46263.jpg"
+      class="image"
+    />
     <div id="timer" class="timer"></div>
     <span class="sub">June 24th</span>
+
     <script>
-        const startDate = new Date('2024-06-24T23:00:00-07:00');
-        setInterval(() => {
-            const currentDate = new Date();
-            const difference = currentDate - startDate;
+      const startDate = new Date("2024-06-24T23:00:00-07:00");
+      setInterval(() => {
+        const currentDate = new Date();
+        const difference = currentDate - startDate;
 
-            const seconds = Math.floor(difference / 1000) % 60;
-            const minutes = Math.floor(difference / 1000 / 60) % 60;
-            const hours = Math.floor(difference / 1000 / 60 / 60) % 24;
-            const days = Math.floor(difference / 1000 / 60 / 60 / 24);
+        const seconds = Math.floor(difference / 1000) % 60;
+        const minutes = Math.floor(difference / 1000 / 60) % 60;
+        const hours = Math.floor(difference / 1000 / 60 / 60) % 24;
+        const days = Math.floor(difference / 1000 / 60 / 60 / 24);
 
-            document.getElementById('timer').innerText = `${days}:${hours}:${minutes}:${seconds}`;
-        }, 1000);
+        document.getElementById(
+          "timer"
+        ).innerText = `${days}:${hours}:${minutes}:${seconds}`;
+      }, 1000);
     </script>
-</body>
+  </body>
 </html>
