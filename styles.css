@@ -36,3 +36,13 @@ body {
   font-style: normal;
   text-shadow: 0 0 30px white;
 }
+
+.sub {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  text-shadow: 0 0 15px white;
+  letter-spacing: 5px;
+}
