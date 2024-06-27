@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle & MJ</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div id="timer" class="timer"></div>
+
+    <script>
+        // Set the start date for the timer
+        const startDate = new Date('2024-06-24T23:00:00-07:00');
+
+        // Update the timer every second
+        setInterval(() => {
+            const currentDate = new Date();
+            const difference = currentDate - startDate;
+
+            const seconds = Math.floor(difference / 1000) % 60;
+            const minutes = Math.floor(difference / 1000 / 60) % 60;
+            const hours = Math.floor(difference / 1000 / 60 / 60) % 24;
+            const days = Math.floor(difference / 1000 / 60 / 60 / 24);
+
+            document.getElementById('timer').innerText = `${days}:${hours}:${minutes}:${seconds}`;
+        }, 1000);
+    </script>
+</body>
+</html>
