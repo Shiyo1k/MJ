@@ -11,12 +11,20 @@ body {
   );
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
+}
+
+.image {
+    height: 20vw;
+    width: 60vw;
+    border-radius: 30px;
+    border: 3px solid #887898;
 }
 
 .timer {
@@ -26,4 +34,5 @@ body {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  text-shadow: 0 0 30px white;
 }
